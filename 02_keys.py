@@ -1,6 +1,3 @@
-from pyspark.sql import functions as F
-from pyspark.sql import Window as wd
-
 def key(fieldlist):
     # Create a window specification partitioned by the given fields
     window = wd.partitionBy(
